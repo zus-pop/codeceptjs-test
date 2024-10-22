@@ -43,7 +43,7 @@ export const config: CodeceptJS.MainConfig = {
     name: "api-test",
     plugins: {
         heal: {
-            enabled: false,
+            enabled: true,
         },
         allure: {
             enabled: true,
