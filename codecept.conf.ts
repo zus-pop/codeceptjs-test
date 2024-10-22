@@ -9,7 +9,7 @@ import "./heal";
 setCommonPlugins();
 
 export const config: CodeceptJS.MainConfig = {
-    tests: ".test/*_test.ts",
+    tests: "./tests/*_test.ts",
     output: "./output",
     helpers: {
         WebDriver: {
