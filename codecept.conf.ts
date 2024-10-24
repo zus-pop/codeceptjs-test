@@ -47,7 +47,7 @@ export const config: CodeceptJS.MainConfig = {
         },
         allure: {
             enabled: true,
-            require: "allure-codeceptjs",
+            require: "@codeceptjs/allure-legacy",
         },
     },
 };

@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1729783437325' stop='1729783467906'>
+    <name>web-test:</name>
+    <title>web-test:</title>
+    <test-cases>
+        <test-case start='1729783437327' status='passed' stop='1729783452961'>
+            <name>Test login admin dashboard</name>
+            <title>Test login admin dashboard</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1729783441414' status='passed' stop='1729783448298'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783448298' status='passed' stop='1729783450310'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783450311' status='passed' stop='1729783450682'>
+                    <name>I fill field "email", "admin@gmail.com"</name>
+                    <title>I fill field "email", "admin@gmail.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783450682' status='passed' stop='1729783450832'>
+                    <name>I fill field "password", "admin123"</name>
+                    <title>I fill field "password", "admin123"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783450833' status='passed' stop='1729783450926'>
+                    <name>I click "Login"</name>
+                    <title>I click "Login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783450927' status='passed' stop='1729783452936'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783452937' status='passed' stop='1729783452961'>
+                    <name>I see "Welcome to Dashboard"</name>
+                    <title>I see "Welcome to Dashboard"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1729783452968' status='passed' stop='1729783467890'>
+            <name>Test login admin dashboard unauthorized</name>
+            <title>Test login admin dashboard unauthorized</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1729783455760' status='passed' stop='1729783463120'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783463120' status='passed' stop='1729783465125'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783465125' status='passed' stop='1729783465427'>
+                    <name>I fill field "email", "jane@gmail.com"</name>
+                    <title>I fill field "email", "jane@gmail.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783465427' status='passed' stop='1729783465553'>
+                    <name>I fill field "password", "jane123"</name>
+                    <title>I fill field "password", "jane123"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783465554' status='passed' stop='1729783465839'>
+                    <name>I click "Login"</name>
+                    <title>I click "Login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783465840' status='passed' stop='1729783467851'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783467852' status='passed' stop='1729783467889'>
+                    <name>I see "You need permission to log in this website"</name>
+                    <title>I see "You need permission to log in this website"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

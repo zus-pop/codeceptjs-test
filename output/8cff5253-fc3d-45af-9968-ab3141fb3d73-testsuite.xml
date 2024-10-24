@@ -1,0 +1,118 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1729782653165' stop='1729782706997'>
+    <name>ai-test:</name>
+    <title>ai-test:</title>
+    <test-cases>
+        <test-case start='1729782653572' status='passed' stop='1729782692010'>
+            <name>test login ai stuff</name>
+            <title>test login ai stuff</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1729782687104' status='passed' stop='1729782688470'>
+                    <name>I am on page "https://pod-booking-admin-dashboard.vercel.app/"</name>
+                    <title>I am on page "https://pod-booking-admin-dashboard.vercel.app/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729782688471' status='passed' stop='1729782689373'>
+                    <name>I fill field ".MuiInputBase-input", "admin@gmail.com"</name>
+                    <title>I fill field ".MuiInputBase-input", "admin@gmail.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729782689373' status='passed' stop='1729782689489'>
+                    <name>I fill field ".MuiInputBase-input[name='password']", "admin123"</name>
+                    <title>I fill field ".MuiInputBase-input[name='password']", "admin123"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729782689489' status='passed' stop='1729782689985'>
+                    <name>I click "Login"</name>
+                    <title>I click "Login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729782689986' status='passed' stop='1729782691991'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729782691991' status='passed' stop='1729782692010'>
+                    <name>I see "Welcome"</name>
+                    <title>I see "Welcome"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1729782692186' status='failed' stop='1729782706301'>
+            <name>test register ai stuff</name>
+            <title>test register ai stuff</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1729782697600' status='passed' stop='1729782703877'>
+                    <name>I am on page "https://pod-booking-admin-dashboard.vercel.app/"</name>
+                    <title>I am on page "https://pod-booking-admin-dashboard.vercel.app/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729782703877' status='passed' stop='1729782704259'>
+                    <name>I click "Login"</name>
+                    <title>I click "Login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729782704259' status='passed' stop='1729782705274'>
+                    <name>I wait 1</name>
+                    <title>I wait 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729782705275' status='undefined'>
+                    <name>I click "Don't have an account? Register now"</name>
+                    <title>I click "Don't have an account? Register now"</title>
+                    <attachments>
+                        <attachment title='Main session - Last Seen Screenshot' source='3ea9e971-c852-4877-9843-24ae1ab86172-attachment.png' type='image/png' size='92430'/>
+                    </attachments>
+                    <steps>
+                        <step start='1729782706277' status='passed' stop='1729782706299'>
+                            <name>I grab htmlfrom "body"</name>
+                            <title>I grab htmlfrom "body"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Evaluation failed: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'Don't have an account? Register now' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33</message>
+                <stack-trace>Evaluation failed: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'Don't have an account? Register now' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33
+                Error: Evaluation failed: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'Don't have an account? Register now' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33
+                    at ExecutionContext._evaluateInternal (F:\SWT\test\node_modules\webdriverio\node_modules\puppeteer-core\lib\cjs\puppeteer\common\ExecutionContext.js:217:19)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async ElementHandle.evaluateHandle (F:\SWT\test\node_modules\webdriverio\node_modules\puppeteer-core\lib\cjs\puppeteer\common\JSHandle.js:120:16)
+                    at async Object.internalHandler.queryAll (F:\SWT\test\node_modules\webdriverio\node_modules\puppeteer-core\lib\cjs\puppeteer\common\QueryHandler.js:35:30)
+                    at async DOMWorld.$$ (F:\SWT\test\node_modules\webdriverio\node_modules\puppeteer-core\lib\cjs\puppeteer\common\DOMWorld.js:122:23)
+                    at async DevToolsDriver.findElements (F:\SWT\test\node_modules\webdriverio\node_modules\devtools\build\utils.js:92:11)
+                    at async Browser.wrappedCommand (F:\SWT\test\node_modules\webdriverio\node_modules\devtools\build\devtoolsdriver.js:62:26)
+                    at async Browser.wrapCommandFn (F:\SWT\test\node_modules\webdriverio\node_modules\@wdio\utils\build\shim.js:63:29)
+                    at async Browser.$$ (F:\SWT\test\node_modules\webdriverio\build\commands\browser\$$.js:6:17)
+                    at async Browser.wrapCommandFn (F:\SWT\test\node_modules\webdriverio\node_modules\@wdio\utils\build\shim.js:63:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1729783429921' stop='1729783437106'>
+    <name>api-test:</name>
+    <title>api-test:</title>
+    <test-cases>
+        <test-case start='1729783429922' status='passed' stop='1729783434015'>
+            <name>test login and get user data successfully</name>
+            <title>test login and get user data successfully</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1729783433257' status='passed' stop='1729783433848'>
+                    <name>I send post request "/auth/login", {"email":"jane@gmail.com","password":"jane123"}</name>
+                    <title>I send post request "/auth/login", {"email":"jane@gmail.com","password":"jane123"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783433851' status='passed' stop='1729783433858'>
+                    <name>I see response contains keys ["token","message"]</name>
+                    <title>I see response contains keys ["token","message"]</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783433858' status='passed' stop='1729783433860'>
+                    <name>I see response code is successful </name>
+                    <title>I see response code is successful </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783433861' status='passed' stop='1729783433862'>
+                    <name>I am bearer authenticated *****</name>
+                    <title>I am bearer authenticated *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783433862' status='passed' stop='1729783434011'>
+                    <name>I send get request "/auth/profile"</name>
+                    <title>I send get request "/auth/profile"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783434012' status='passed' stop='1729783434013'>
+                    <name>I see response code is successful </name>
+                    <title>I see response code is successful </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783434013' status='passed' stop='1729783434015'>
+                    <name>I see response contains keys ["user_id","email","user_name","role"]</name>
+                    <title>I see response contains keys ["user_id","email","user_name","role"]</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1729783434030' status='passed' stop='1729783437093'>
+            <name>test get user data without token</name>
+            <title>test get user data without token</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1729783436926' status='passed' stop='1729783437089'>
+                    <name>I send get request "/auth/profile"</name>
+                    <title>I send get request "/auth/profile"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783437089' status='passed' stop='1729783437090'>
+                    <name>I see response code is 401</name>
+                    <title>I see response code is 401</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1729783437090' status='passed' stop='1729783437093'>
+                    <name>I see response contains json {"message":"Access denied. No token provided."}</name>
+                    <title>I see response contains json {"message":"Access denied. No token provided."}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

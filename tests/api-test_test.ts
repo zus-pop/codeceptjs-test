@@ -17,7 +17,7 @@ Scenario("test login and get user data successfully", async ({ I }) => {
     I.seeResponseContainsKeys(["user_id", "email", "user_name", "role"]);
 });
 
-Scenario.only("test get user data without token", async ({ I }) => {
+Scenario("test get user data without token", async ({ I }) => {
     // get user data
     await I.sendGetRequest("/auth/profile");
     I.seeResponseCodeIs(401);

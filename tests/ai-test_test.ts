@@ -1,6 +1,6 @@
 Feature("ai-test");
 
-Scenario.only("test login ai stuff", async ({ I }) => {
+Scenario("test login ai stuff", async ({ I }) => {
     I.amOnPage("https://pod-booking-admin-dashboard.vercel.app/");
     // I.click("Login");
     // I.wait(2);
